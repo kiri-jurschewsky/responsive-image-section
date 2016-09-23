@@ -1,0 +1,44 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+.btn {
+  font-size: 1.125rem;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: 3px;
+  border-radius: 8px;
+  padding: 0.4em 0.75em 0.60em;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+  max-width: none;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.btn {
+  font-family: "Lato";
+}
+
+section {
+  padding-top: 2em;
+}
