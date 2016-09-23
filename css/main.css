@@ -40,11 +40,8 @@ html {
 }
 
 a {
-  text-align: center;
   background-color: #555;
   border-radius: 4px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: inline-block;
 }
 
@@ -61,8 +58,6 @@ img {
 body {
   background-color: #e2e2e2;
   margin: 0;
-  max-width: none;
-  vertical-align: middle;
   font-style: normal;
   margin: 0;
 }
@@ -99,12 +94,8 @@ section {
 @media only screen and (min-width: 38em) {
 
   html {
-    width: 50%;
-    display: inline-block;
-    text-align: left;
     font-size:110%;
     line-height: 1.4;
-    vertical-align: middle;
   }
 
   img {
@@ -118,8 +109,8 @@ section {
     max-width: 500px;
   }
   section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   p {
