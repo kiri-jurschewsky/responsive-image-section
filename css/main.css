@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,7 +14,7 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -36,11 +36,28 @@ html {
 .btn:hover {
   display: inline-block;
   background-color: #000;
+  border-color: #000;
+}
+
+a {
+  text-align: center;
+  background-color: #555;
+  border-radius: 4px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 img {
   width: 100%;
   display: block;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
 }
 
 body {
@@ -49,14 +66,22 @@ body {
   max-width: none;
   vertical-align: middle;
   font-style: normal;
+  margin: 0;
 }
 
 h1 {
   font-style: normal;
+  font-size: 1.5em;
 }
 
-h2 {
+main {
+  overflow: hidden;
+  font-family: sans-serif;
+  padding-bottom: 1rem;
+}
 
+p {
+  margin-top: 0;
 }
 
 section {
@@ -70,19 +95,27 @@ section {
     font-size:100%;
     line-height: 1.3;
   }
-
 }
 
 @media only screen and (min-width: 38em) {
 
   html {
+    width: 40%;
+    display: inline-block;
     text-align: left;
     font-size:110%;
     line-height: 1.4;
+    vertical-align: middle;
   }
 
-  .img-flex{
-    position: absolute;
+  img {
+    width: auto;
+  }
+
+  .img-flex {
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
   }
 
 }
@@ -95,6 +128,11 @@ section {
     line-height: 1.5;
   }
 
+  .img-flex {
+    display: block;
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -103,6 +141,10 @@ section {
     text-align: left;
     font-size:130%;
     line-height: 1.5;
+  }
+
+  img-flex {
+    position: relative;
   }
 
 }
