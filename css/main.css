@@ -10,7 +10,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-style: normal;
   font: normal 100%/1.3 sans-serif;
 }
 
@@ -100,7 +99,7 @@ section {
 @media only screen and (min-width: 38em) {
 
   html {
-    width: 40%;
+    width: 50%;
     display: inline-block;
     text-align: left;
     font-size:110%;
@@ -113,20 +112,28 @@ section {
   }
 
   .img-flex {
-    width: 40%;
+    width: 50%;
     display: inline-block;
     vertical-align: middle;
+    max-width: 500px;
+  }
+  section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   p {
-    width: 40%;
+    width: 50%;
     text-align: left;
     display: inline-block;
     vertical-align: middle;
   }
 
-  article {
-    padding-bottom: 2rem;
+  .text-section {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 470px;
   }
 
 }
@@ -138,23 +145,11 @@ section {
     font-size:120%;
     line-height: 1.5;
   }
-
-  p {
-    max-width: 1200px;
+  section {
     padding-top: 2rem;
-    margin: auto;
+    padding-bottom: 2rem;
   }
 
-  article {
-    margin: auto;
-    padding-top: 2rem;
-    max-width: 1300px;
-  }
-
-  .img-flex {
-    display: block;
-    width: 100%;
-  }
 
 }
 
@@ -164,16 +159,6 @@ section {
     text-align: left;
     font-size:130%;
     line-height: 1.5;
-  }
-
-  article {
-    margin: auto;
-    padding-top: 2rem;
-    max-width: 1300px;
-  }
-
-  img-flex {
-    position: relative;
   }
 
 }
